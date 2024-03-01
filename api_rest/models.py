@@ -19,3 +19,21 @@ class Bebida (models.Model):
 
     def __str__(self):
         return f"{self.nombre}--{self.creado}"
+    
+
+class Dulces (models.Model):
+    nombre=models.CharField(max_length= 30)
+    sabor = models.CharField(max_length= 30)
+    Empaque = models.CharField(max_lenght= 30)
+    cantidad=models.IntegerField()
+
+    def __str__(self):
+        return f"{self.nombre}--{self.creado}"
+    
+class Electronicos (models.Model):
+    precio = models.CharField(max_lenght= 30)
+    tipo = models.CharField(max_leght = 30)
+    marca = models.CharField(max_leght = 30)
+    
+    def __str__(self):
+        return f"{self.nombre}--{self.creado}"
